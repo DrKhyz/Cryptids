@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <title>Cryp' Arena</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Les combats de Cryptides</h1>
+            <nav class="fixed-nav">
+                <a href="index.html">
+                    <i class="fa fa-home large"></i>
+                    <p>INDEX</p>
+                </a>
+                <a href="index.html#fight">
+                    <i class="fa fa-fist-raised large"></i>
+                    <p>LE COMBAT</p>
+                </a>
+                <a href="index.html#pics">
+                    <i class="fa fa-eye large"></i>
+                    <p>LES CRYPTIDES</p>
+                </a>
+                <a href="index.html#reservation">
+                    <i class="fa fa-envelope large"></i>
+                    <p>RESERVATION</p>
+                </a>
+            </nav>
+        </header>
+        <section>
+            <article id="fight">
+                <p>Bonjour à tous et bienvenue dans la Crypt' Arena pour voir des combats de monstres.</p>
+                <p>Dans notre arene, ces monstres ce combattent depuis des décénies sous vos yeux ebaillie pour votre plus grand bonheur.</p>
+                <p>Ce soir, nous proposons un combat d'anthologie. La grande Licorne à poil blanc contre le sasquash, plus communement appelé le Bigfoot.</p>
+                <p>Ces 2 adversaire vont s'affronter dans un combat sanglant, et un des deux ne resortirat peut etre pas de l'arêne.</p>
+            </article>
+            <hr>
+                <div class="fighters">
+                    <p><a href="licorne.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/La_Licorne_et_le_Loup.JPG/220px-La_Licorne_et_le_Loup.JPG" class="img-fight" alt="Une licorne">Click pour connaitre son Histoire</a></p>
+                    <p><img src="https://cdn170.picsart.com/upscale-236033338052212.png" class="vs" alt="Versus"></p>
+                    <p><a href="bigfoot.html"><img src="http://www.paranormal-info.fr/images/bigfoot-sasquatch.jpg" class="img-fight" alt="Un bigfoot">Click pour connaitre son Histoire</a></p>
+                </div>
+            <hr>
+            <article class="carousell" id="pics">
+                <div id="slideshow">
+                    <ul id="sContent">
+                        <li><img src="img/chupacabra.jpg" alt="Le Chupacabra" /></li>
+                        <li><img src="img/jerseydevil.jpg" alt="Le diable de New Jersey" /></li>
+                        <li><img src="img/kraken.jpg" alt="Le Kraken" /></li>
+                        <li><img src="img/megalodon.jpeg" alt="Le megalodon" /></li>
+                    </ul>
+                </div>
+                <div class="carousell-text">
+                    <p>Un cryptide est un animal ou une plante dont certaines personnes supposent l’existence, laquelle n'est étayée par aucune preuve scientifique, comme le Yéti, le Kraken ou le monstre du Loch Ness.</p>
+                    <p>Le <em>Chupacabra</em> est une créature qui est décrite comme ayant des yeux bleus, deux trous pour les narines, une bouche avec des crocs saillants vers le haut et vers le bas et serait sans poils. L'animal se nourrit en suçant le sang des animaux de ferme comme les chèvres ou les vaches en faisant des trous parfaitement circulaires dans le cou jusqu'au cervelet tuant l'animal en ne provoquant aucune souffrance.</p>
+                    <p>Le <em>Diable de Jersey</em> habite dans les forêts du sud du New Jersey, aux États-Unis. Il est généralement décrit comme une créature bipède avec des sabots mais il existe plusieurs variations de sa description plus détaillée, la plus commune étant une créature au corps reptilien avec la tête d'une chèvre ou d'un cheval, des ailes de chauve-souris, des cornes, de petites pattes avant griffues, des sabots fendus et une queue fourchue.</p>
+                    <p>Le <em>Kraken</em> est une créature issue des légendes scandinaves médiévales. Il s'agit d'un monstre de très grande taille et doté de nombreux tentacules. Dans ses rencontres avec l'homme, le kraken serait capable de saisir la coque d'un navire pour le faire chavirer, le faisant ainsi couler et ses marins sont noyés et parfois dévorés.</p>
+                    <p>Le <em>Mégalodon</em>, Requin Mégalodon ou encore grand Requin est un requin préhistorique, le plus grand qui ait jamais vécu. Il peux devorer un homme d'un seul coup. A taille adulte, il ateint les 35 mètre de long.</p>
+                </div>
+            </article>
+            <hr>
+            <article id="reservation" class="contact">
+                <h2>Reservez vos places <em>des maintenant</em> !</h2>
+                <form class="form" action="send.php" method="POST">
+                    <div class="col-form">
+                        <div>
+                            <label for="lastname">Nom :</label>
+                            <input type="text" id="lastname" name="last_name">
+                        </div>
+                        <div>
+                            <label for="username">Prenom :</label>
+                            <input type="text" id="username" name="user_name">
+                        </div>
+                        <div>
+                            <label for="mail">E-mail :</label>
+                            <input type="email" id="mail" name="user_mail">
+                        </div>
+                        <div>
+                            <label for="msg">Message :</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-form">
+                        <div>
+                            <label for="date">Date :</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div>
+
+                            <label>Place :</label>
+                            <label for="fosse">Fosse :</label>
+                            <input class="radio" type="radio" id="fosse" name="place" checked>
+                            <label for="tribune">Tribune :</label>
+                            <input class="radio" type="radio" id="tribune" name="place">
+                        </div>
+                        <div>
+                            <label>Quantité :</label>
+                            <select name="quantite">
+                                <option>1
+                                <option>2
+                                <option>3
+                                <option>4
+                            </select>
+                        </div>
+                        <div class="button">
+                            <button>Reserver</button>
+                        </div>
+                    </div>
+                </form>
+            </article>
+            <hr>
+        </section>
+        <easteregg></easteregg>
+        <footer>
+        
+        </footer>
+    </body>
+</html>

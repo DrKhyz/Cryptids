@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <title>Cryp' Arena</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Les combats de Cryptides</h1>
+            <nav class="fixed-nav">
+                <a href="index.html">
+                    <i class="fa fa-home large"></i>
+                    <p>INDEX</p>
+                </a>
+                <a href="index.html#fight">
+                    <i class="fa fa-fist-raised large"></i>
+                    <p>LE COMBAT</p>
+                </a>
+                <a href="index.html#pics">
+                    <i class="fa fa-eye large"></i>
+                    <p>LES CRYPTIDES</p>
+                </a>
+                <a href="index.html#reservation">
+                    <i class="fa fa-envelope large"></i>
+                    <p>RESERVATION</p>
+                </a>
+            </nav>
+
+            <nav class="ancres">
+                <a href="#définition">Définition</a>
+                <a href="#origine">Les origines</a>
+                <a href="#observations">Observations</a>
+            </nav>
+
+        </header>
+
+        <section>
+            <article class="fight">
+
+                <h2>Legende de la Licorne</h2>
+
+                <div class="imgcont">
+                    <img src="img/licorne1.jpeg" alt="Photo de Licorne" title="Licorne Magique" class="img1" />
+                    <img src="img/licorne2.jpeg" alt="Photo de Licorne" title="Licorne Magique" class="img2" />
+                </div>
+
+                <p>La licorne, parfois nommée unicorne, est une créature légendaire à corne unique. Son origine, controversée, résulte de multiples influences, en particulier de descriptions d'animaux tels que le rhinocéros et l'antilope, issues de récits d'explorateurs. Les premières représentations attestées d'animaux unicornes remontent à la civilisation de l'Indus. Le récit sanskrit d'Ekasringa et les routes commerciales pourraient avoir joué un rôle dans leur diffusion vers le Proche-Orient.</p>
+            
+            </article>
+
+            <hr>
+            <article class="fight">
+                <h2>Pouvoir de la Licorne</h2>
+
+                <div class="imgcont">
+                    <img src="img/licorne7.jpeg" alt="Photo de Licorne" title="Licorne Magique" class="img1" />
+                    <img src="img/licorne8.jpeg" alt="Photo de Licorne" title="Licorne Magique" class="img2" />
+                </div>
+
+                <p>La licorne médiévale est un symbole de puissance, qu'exprime essentiellement sa corne, mais aussi de faste et de pureté. D'après une vieille légende de l'Inde, la licorne est douée d'un pouvoir magique.</p>
+            </article>
+
+            <article class="fight">
+                <h2>Ou vit la Licorne</h2>
+
+                <div class="imgcont">    
+                    <img src="img/licorne4.jpeg" alt="Photo de Licorne" title="Licorne Magique" class="img1" />
+                    <img src="img/licorne6.jpeg" alt="Photo de Licorne" title="Licorne Magique" class="img2" />
+                </div>
+
+                <p>La plupart des licornes vivent pour protéger les forêts et leurs créatures intelligentes. Elles ne vivent que dans une forêt bien définie et communiquent régulièrement avec les fées, les pixies, les dryades et les elfes. Elles se montrent rarement, sauf pour protéger et défendre leur environnement.</p>
+            
+            </article>
+
+            <article class="fight">
+
+                <h2>Nourriture et Amour</h2>
+
+                <div class="imgcont">
+                    <img src="img/licorne3.jpeg" alt="Photo de Licorne" title="Licorne Magique" class="img1" />
+                    <img src="img/licorne5.jpeg" alt="Photo de Licorne" title="Licorne Magique" class="img2" />
+                </div>
+
+                <p>Herbivore, la licorne ne mange que de l'herbe et des feuilles. Elle ne prend compagnon qu'une seule fois dans sa vie et demeure fidèle jusqu'à la fin de son existence. La licorne sylvestre, comme son nom l'indique, vit dans les forêts dont elle assure la protection.</p>
+    
+            </article>
+
+            <hr>
+
+        </section>
+        <footer>
+            <article id="reservation" class="contact">
+                <h2>Reservez vos places <em>des maintenant</em> !</h2>
+                <form class="form" action="send.php" method="POST">
+                    <div class="col-form">
+                        <div>
+                            <label for="name">nom :</label>
+                            <input type="text" id="lastname" name="last_name">
+                        </div>
+                        <div>
+                            <label for="username">Prenom :</label>
+                            <input type="text" id="username" name="user_name">
+                        </div>
+                        <div>
+                            <label for="mail">E-mail :</label>
+                            <input type="email" id="mail" name="user_mail">
+                        </div>
+                        <div>
+                            <label for="msg">Message :</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-form">
+                        <div>
+                            <label for="date">Date :</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div>
+
+                            <label>Place :</label>
+                            <label for="fosse">Fosse :</label>
+                            <input class="radio" type="radio" id="fosse" name="place" checked>
+                            <label for="tribune">Tribune :</label>
+                            <input class="radio" type="radio" id="tribune" name="place">
+                        </div>
+                        <div>
+                            <label for="quantite">Quantités :</label>
+                            <select name="quantite">
+                                <option>1
+                                <option>2
+                                <option>3
+                                <option>4
+                            </select>
+                        </div>
+                        <div class="button">
+                            <button>Reserver</button>
+                        </div>
+                    </div>
+                </form>
+            </article>
+            <easteregg></easteregg>
+        </footer>
+    </body>
+</html>
